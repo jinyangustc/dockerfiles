@@ -3,9 +3,9 @@
 ##################################################
 
 ###########################################
-# Base image 
+# Base image
 ###########################################
-FROM ubuntu:{{ ubuntu_distro }} AS base
+FROM ubuntu:{{ image_version }} AS base
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -q -y \
   && rm -rf /var/lib/apt/lists/*
 
 ###########################################
-# Develop image 
+# Develop image
 ###########################################
 FROM base AS dev
 
@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-#  Full+Gazebo+Nvidia image 
+#  Full+Gazebo+Nvidia image
 ###########################################
 
 FROM gazebo AS nvidia

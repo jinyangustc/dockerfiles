@@ -3,7 +3,7 @@
 #############################################
 
 ###########################################
-# Base image 
+# Base image
 ###########################################
 FROM ubuntu:16.04 AS base
 
@@ -55,7 +55,7 @@ ENV CMAKE_PREFIX_PATH=/opt/ros/kinetic
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-# Develop image 
+# Develop image
 ###########################################
 FROM base AS dev
 
@@ -96,7 +96,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-# Full image 
+# Full image
 ###########################################
 FROM dev AS full
 
@@ -108,7 +108,7 @@ RUN apt-get update && apt-get install -y \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-#  Full+Gazebo image 
+#  Full+Gazebo image
 ###########################################
 FROM full AS gazebo
 
@@ -120,7 +120,7 @@ RUN apt-get update && apt-get install -y \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-#  Full+Gazebo+Nvidia image 
+#  Full+Gazebo+Nvidia image
 ###########################################
 
 FROM gazebo AS gazebo-nvidia

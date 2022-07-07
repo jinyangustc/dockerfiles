@@ -3,7 +3,7 @@
 ##################################################
 
 ###########################################
-# Base image 
+# Base image
 ###########################################
 FROM ubuntu:20.04 AS base
 
@@ -39,7 +39,7 @@ RUN apt-get update && apt-get install -q -y \
   && rm -rf /var/lib/apt/lists/*
 
 ###########################################
-# Develop image 
+# Develop image
 ###########################################
 FROM base AS dev
 
@@ -68,7 +68,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-#  Full+Gazebo+Nvidia image 
+#  Full+Gazebo+Nvidia image
 ###########################################
 
 FROM gazebo AS nvidia

@@ -3,7 +3,7 @@
 ##################################################
 
 ###########################################
-# Base image 
+# Base image
 ###########################################
 FROM ubuntu:18.04 AS base
 
@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -q -y \
 
 
 ###########################################
-# Develop image 
+# Develop image
 ###########################################
 FROM base AS dev
 
@@ -73,7 +73,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 ENV DEBIAN_FRONTEND=
 
 ###########################################
-# Nvidia image 
+# Nvidia image
 ###########################################
 FROM dev AS nvidia
 

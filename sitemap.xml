@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jinyangustc.github.io/ros_dockerfiles/</loc>
-         <lastmod>2022-07-07</lastmod>
+         <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jinyangustc.github.io/ros_dockerfiles/gazebo/</loc>
-         <lastmod>2022-07-07</lastmod>
+         <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jinyangustc.github.io/ros_dockerfiles/ignition/</loc>
-         <lastmod>2022-07-07</lastmod>
+         <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jinyangustc.github.io/ros_dockerfiles/ros/</loc>
-         <lastmod>2022-07-07</lastmod>
+         <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jinyangustc.github.io/ros_dockerfiles/ros2/</loc>
-         <lastmod>2022-07-07</lastmod>
+         <lastmod>2022-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
